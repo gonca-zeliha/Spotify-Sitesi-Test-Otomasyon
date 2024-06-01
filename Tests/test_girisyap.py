@@ -26,9 +26,7 @@ class TestGirisYap(softest.TestCase, unittest.TestCase):
         girisyap.hata_mesaji()
         girisyap.oturumu_kapat()
 
-        #manuel robotu geç
-   
-    
+     
     def test2_giris_isleminde_mail_ve_sifre_formata_uygun_degil(self):
         girisyap = GirisYap(self.driver)
         kayitol = KayıtOl(self.driver)
