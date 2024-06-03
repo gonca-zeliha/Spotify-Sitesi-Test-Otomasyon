@@ -46,3 +46,6 @@ class SarkıArama(PageBase):
         popup = self.wait_element_visibility(BEGENILEN_SARKI_MESAJI_LOCATER)
         return popup.text
     
+    def ekran_foto_cek(self):
+        ekrangoruntusu_path = FOTO_SARKI_BEGENILENLERE_EKLENDI_POPUP
+        self.driver.save_screenshot(ekrangoruntusu_path)
