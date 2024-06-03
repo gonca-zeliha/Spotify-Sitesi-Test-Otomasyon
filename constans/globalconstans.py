@@ -75,16 +75,12 @@ CALMA_LISTESI_EKLE=(By.CLASS_NAME,"f0GjZQZc4c_bKpqdyKbq.JaGLdeBa2UaUMBT44vqI.UCj
 CALMA_LISTESI_ADI_TEXT=("GONCA")
 KAYDET_BUTONU=(By.CLASS_NAME,"ButtonInner-sc-14ud5tc-0.cnKUru.encore-inverted-light-set")
 
-# CROSS_ICON_LOCATE = (By.CLASS_NAME, "IconWrapper__Wrapper-sc-16usrgb-0.hYdsxw")
-# CREATE_PLAYLIST_BUTTON = (By.CLASS_NAME, "Type__TypeElement-sc-goli3j-0.dsbIME.ellipsis-one-line.htqz7Vb8mLJvGKTi1vrs")
-# POP_UP_LOCATE = (By.CLASS_NAME, "Button-sc-1dqy6lx-0.hidZeW.yclq4HDmRA_euiUYwB9O")
-# PLAYLIST_TEXT_LOCATE = (By.CLASS_NAME, "encore-text.encore-text-body-small.lp9Tfm4rsM9_pfbIE0zd")
-# PLAYLIST_TEXT = "Çalma listesi"
-# SEARCH_BAR_LOCATE = (By.CLASS_NAME, "encore-text.encore-text-body-small.FeWwGSRANj36qpOBoxdx")
-# ADD_TEST_SONG1 = (By.XPATH, "//*[@id='main']/div/div[2]/div[3]/div[1]/div[2]/div[2]/div[2]/main/div[1]/section/div[2]/div[3]/div/div[1]/div/div[2]/div[4]/div/div[4]/button")
-# ADD_TEST_SONG2 = (By.XPATH, "//*[@id='main']/div/div[2]/div[3]/div[1]/div[2]/div[2]/div[2]/main/div[1]/section/div[2]/div[3]/div/div[1]/div/div[2]/div[5]/div/div[4]/button")
-# SONG_LOCATE = (By.CLASS_NAME, "IjYxRc5luMiDPhKhZVUH.UpiE7J6vPrJIa59qxts4")
+CALMA_LITESINDE_UC_NOKTA=(By.CLASS_NAME,"Svg-sc-ytk21e-0.cqasRA")
+CALMA_LISTESINDE_SIL_BUTONU=(By.XPATH,"//*[@id='context-menu']/ul/li[4]/button/span")
+SILMEYE_EMINMISIN_SIL=(By.CLASS_NAME,"Button-sc-qlcn5g-0.bGlWbV.encore-text-body-medium-bold")
 
+KITAPLIGINDAN_KALDIRILDI=(By.CLASS_NAME,"encore-text.encore-text-body-medium.encore-internal-color-text-base")
+KITAPLIGINDAN_KALDIRILDI_TEXT=("Kitaplığın'dan kaldırıldı.")
 
 ##TEST DATA##
 
@@ -105,3 +101,4 @@ FOTO_GIRISDE_HATALI_MAIL_VE_SIFRE_POPUP_MESAJI= r'screenshots\girisyap\Hatalı m
 FOTO_GIRISDE_BOS_MAIL_VE_SIFRE= r'screenshots\girisyap\Bos mail ve sifre.png'
 FOTO_SARKI_BEGENILENLERE_EKLENDI_POPUP=r'screenshots\sarkıarama\Sarkıyı begenilenlere ekleme.png'
 FOTO_CALMA_LISTESI_ADI=r'screenshots\calmalistesi\çalma listesi adı değiştirildi.png'
+FOTO_CALMA_LISTESINDEN_SARKI_KALDIRILDI=r'screenshots\calmalistesi\çalma listesinden sarkı kaldırıldı.png'

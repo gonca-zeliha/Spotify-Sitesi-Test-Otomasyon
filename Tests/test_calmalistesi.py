@@ -38,3 +38,16 @@ class Testcalmalistesi(softest.TestCase, unittest.TestCase):
         calmalistesi.calma_listesi_adı_ekle()
         calmalistesi.kaydet_butonuna_tıkla()
         calmalistesi.ekran_foto_cek()
+
+    def test3_calma_listesinden_sarkı_sil(self):
+        girisyap = AnaGiris(self.driver)
+        kayitol = KayıtOl(self.driver)
+        calmalistesi =CalmaListesiSil(self.driver)
+        kayitol.çerezleri_kabul_et()
+        girisyap.ana_giris()
+        calmalistesi.oluşturulan_calma_listesine_tıkla()
+        calmalistesi.calma_listesindeki_üç_noktaya_tıkla()
+        calmalistesi.calma_listesindeki_sil_butonuna_tıkla()
+        calmalistesi.silmeye_eminmisinde_sil_butonuna_tıkla()
+        calmalistesi.kitaplığından_kaldırıldı_popup_mesajı_görüntülenir()
+        calmalistesi.ekran_foto_cek()

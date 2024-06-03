@@ -44,11 +44,39 @@ class CalmaListesiDüzenle(PageBase):
         tıkla.click()
         sleep(2)
         tıkla.send_keys(CALMA_LISTESI_ADI_TEXT)
-    
 
     def kaydet_butonuna_tıkla(self):
         self.wait_element_visibility(KAYDET_BUTONU).click()
     
     def ekran_foto_cek(self):
         ekrangoruntusu_path = FOTO_CALMA_LISTESI_ADI
+        self.driver.save_screenshot(ekrangoruntusu_path)
+    
+@pytest.mark.usefixtures("setup")
+class CalmaListesiSil(PageBase):
+    def __init__(self,driver):
+        super().__init__(driver)
+        self.driver = driver
+
+    def oluşturulan_calma_listesine_tıkla(self):
+        self.wait_element_visibility(OLUSTURULAN_CALMA_LISTESINE_TIKLA).click()
+
+    def calma_listesindeki_üç_noktaya_tıkla(self):
+        self.wait_element_visibility(CALMA_LITESINDE_UC_NOKTA).click()
+        sleep(2)
+
+    def calma_listesindeki_sil_butonuna_tıkla(self):
+        self.wait_element_visibility(CALMA_LISTESINDE_SIL_BUTONU).click()
+        sleep(2)
+
+    def silmeye_eminmisinde_sil_butonuna_tıkla(self):
+        self.wait_element_visibility(SILMEYE_EMINMISIN_SIL).click()
+
+        
+    def kitaplığından_kaldırıldı_popup_mesajı_görüntülenir(self):
+        popup = self.wait_element_visibility(KITAPLIGINDAN_KALDIRILDI)
+        return popup.text
+    
+    def ekran_foto_cek(self):
+        ekrangoruntusu_path = FOTO_CALMA_LISTESINDEN_SARKI_KALDIRILDI
         self.driver.save_screenshot(ekrangoruntusu_path)
