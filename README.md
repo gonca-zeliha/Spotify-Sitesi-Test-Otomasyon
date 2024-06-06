@@ -15,4 +15,3 @@ Kütüphaneler:
 Projede, clean code yazmak adına POM (Page Object Model) kullanılmıştır. Bu model, her web sayfası veya bileşen için ayrı bir sınıf oluşturularak, sayfa üzerindeki elemanlarla etkileşim kurmak 
 için gerekli yöntemlerin tanımlanmasını sağlar. Bu sayede, kodun bakımı ve yeniden kullanılabilirliği artırılmıştır.
 
-  <img src="https://profile-counter.glitch.me/gonca-zeliha/count.svg?"  />
